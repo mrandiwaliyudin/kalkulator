@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="bg-slate-500 ">
+	<div class="flex items-center justify-center">
+	
+	<table class="bg-slate-800 shadow-md shad text-center p-10 w-2/6 flex justify-around border-separate [border-spacing:0.75rem]">
+        
+		<div>
+		<tr class="shadow-md text-center p-10 w-2/6 "> 
+			<td colspan="5">
+				<input type="text" disabled id="output" value="0" class="py-5 px-8 text-right" >
+			</td>
+		</tr>
+		<tr class="text-white text-xl  ">
+			<td class="bg-blue-700 rounded-md hover:bg-gray-500 py-4"><button class="btn" onclick="btn('1')">1</button></td>
+			<td class="bg-blue-700 rounded-md hover:bg-gray-500 py-4"><button class="btn" onclick="btn('2')">2</button></td>
+			<td class="bg-blue-700 rounded-md hover:bg-gray-500 py-4"><button class="btn" onclick="btn('3')">3</button></td>
+			<td  class="bg-orange-500 rounded-md"><button class="btn opr" onclick="btn_opr(1)">*</button></td> 
+		</tr>
+		<tr class="text-white text-xl  ">
+			<td class="bg-blue-700 rounded-md   hover:bg-gray-500 py-4" ><button class="btn" onclick="btn('4')">4</button></td>
+			<td class="bg-blue-700 rounded-md hover:bg-gray-500 py-4"><button class="btn" onclick="btn('5')">5</button></td>
+			<td class="bg-blue-700 rounded-md hover:bg-gray-500 py-4"><button class="btn" onclick="btn('6')">6</button></td>
+			<td  class="bg-orange-500 rounded-md"><button class="btn opr" onclick="btn_opr(2)">/</button></td>
+		</tr>
+		<tr class="text-white text-xl  ">
+			<td class="bg-blue-700 rounded-md   hover:bg-gray-500 py-4"><button class="btn" onclick="btn('7')">7</button></td>
+			<td class="bg-blue-700 rounded-md hover:bg-gray-500 py-4"><button class="btn" onclick="btn('8')">8</button></td>
+			<td class="bg-blue-700 rounded-md hover:bg-gray-500 py-4"><button class="btn" onclick="btn('9')">9</button></td>
+			<td  class="bg-orange-500 rounded-md hover:bg-gray-500 py-4"><button class="btn opr" onclick="btn_opr(3)">-</button></td>
+		</tr>
+		<tr class="text-white text-xl ">
+			<td class="bg-blue-700 rounded-md   hover:bg-gray-500 py-4"><button class="btn" onclick="btn('0')">0</button></td>
+			<td class="bg-blue-700 rounded-md" ><button class="btn clr" onclick="clr()">AC</button></td>
+			<td class="bg-blue-700 rounded-md  hover:bg-gray-500 py-4"><button class="btn" onclick="koma()">.</button></td>
+			<td class="bg-orange-500"><button class="btn opr" onclick="btn_opr(4)">+</button></td>
+		</tr>
+		<tr class="bg-orange-500">
+            
+			<td class="rounded-md" ><button class="btn hsl " style="width: 100%" onclick="hitung()">=</button></td>
+		
+		</tr>
+	</div>
+	</table>
+	</div>
+	<script type="text/javascript" src=""></script>
+</body>
+</html>
