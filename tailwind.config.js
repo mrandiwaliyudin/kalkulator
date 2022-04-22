@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./index.html'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'regal-blue': '#1e004d',
+      },
+    },
   },
   plugins: [],
 }
